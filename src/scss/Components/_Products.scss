@@ -4,9 +4,12 @@
  */
 
  .Products {
-  // background-color: #f3f3f3;
   width: 100%;
   padding-top: $spacing_base * 2;
+
+  @include max-screen($small) {
+    padding-top: $spacing_base * 3;
+  }
 
   &Nav {
     margin-left: 30px;
@@ -34,13 +37,17 @@
 
     @include max-screen($big) {
       height: $spacing_base * 2;
-    }
-
-    @include max-screen($big) {
       h1 {
         font-size: 90%;
         font-weight: normal;
       }
+    }
+    @include max-screen($small) {
+      .BreadcrumbItem {
+        display: none;
+      }
+      padding-top: 10px;
+      font-size: 1.7em;
     }
 
 
@@ -60,6 +67,9 @@
 
     @include max-screen($big) {
       padding-top: $spacing_base * 2;
+    }
+    @include max-screen($small) {
+      // padding-top: $spacing_base * 3;
     }
 
     &__item {

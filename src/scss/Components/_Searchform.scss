@@ -5,6 +5,9 @@
 .Searchform {
   display: flex;
   align-content: center;
+  @include max-screen($small) {
+    order: 1;
+  }
 
   input {
     width: 100px;

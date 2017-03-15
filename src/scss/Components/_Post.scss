@@ -30,6 +30,10 @@
     background-color: $gray_light;
     padding-top: $spacing_base;
 
+    @include max-screen($small) {
+      padding-top: $spacing_base * 1.5;
+    }
+
     img {
       flex: 1;
     }
@@ -42,7 +46,7 @@
       color: $white;
 
       @include max-screen($small) {
-        background-color: red;
+
       }
       @include max-screen($big) {
         max-width: 550px;

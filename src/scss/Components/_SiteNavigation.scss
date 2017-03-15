@@ -7,8 +7,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  // font-size: 1em;
-  // flex: 1;
+
+  @include max-screen($small) {
+    order: 4;
+    background-color: $gray_lighter;
+    width: 100%;
+  }
 
   ul {
     list-style: none;
@@ -21,7 +25,7 @@
 
   a {
     color: $white;
-    padding: $spacing_base/4;
+    padding: $spacing_base / 4;
     height: 100%;
     // text-transform: uppercase;
     border-bottom: 5px solid transparent;
@@ -31,6 +35,10 @@
     &:focus,
     &.active {
       border-bottom-color: $gray_dark;
+    }
+
+    @include max-screen($small) {
+      color: $black;
     }
   }
 }

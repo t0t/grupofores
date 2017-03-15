@@ -8,13 +8,13 @@
   }
 }
 
-use.logo {} // For svg symbol instances
+// use.logo {} // For svg symbol instances
 
 .icon {
 
   &Logo {
     height: 46px;
-    @include max-screen(800px) {
+    @include max-screen($big) {
       height: 100px;
     }
   }
@@ -26,9 +26,6 @@ use.logo {} // For svg symbol instances
     width: 27px;
     height: 27px;
     margin-right: 10px;
-    @include max-screen(800px) {
-
-    }
   }
 
   &Logo--line {

@@ -169,7 +169,7 @@ input::-moz-focus-inner {
 
 .iconLogo {
   height: 46px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     .iconLogo {
       height: 100px; } }
 
@@ -1044,6 +1044,10 @@ sub {
   justify-content: space-between;
   background-color: #777;
   z-index: 10; }
+  @media screen and (max-width: 375px) {
+    .siteHeader {
+      height: 60px;
+      flex-wrap: wrap; } }
 
 /*
  * Site Brand
@@ -1052,9 +1056,13 @@ sub {
   height: 100%;
   background-color: white;
   width: 180px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     .siteBrand {
       width: 80px; } }
+  @media screen and (max-width: 375px) {
+    .siteBrand {
+      width: 60px;
+      order: 1; } }
   .siteBrand__logo {
     height: 100%;
     display: flex;
@@ -1136,6 +1144,11 @@ sub {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  @media screen and (max-width: 375px) {
+    .siteNavigation {
+      order: 4;
+      background-color: #F6F5F5;
+      width: 100%; } }
   .siteNavigation ul {
     list-style: none;
     margin-bottom: 0;
@@ -1149,6 +1162,9 @@ sub {
     border-bottom: 5px solid transparent; }
     .siteNavigation a:hover, .siteNavigation a:active, .siteNavigation a:focus, .siteNavigation a.active {
       border-bottom-color: #444; }
+    @media screen and (max-width: 375px) {
+      .siteNavigation a {
+        color: black; } }
 
 /*
  * Post
@@ -1174,6 +1190,9 @@ sub {
     justify-content: space-around;
     background-color: #777;
     padding-top: 40px; }
+    @media screen and (max-width: 375px) {
+      .PostHeader {
+        padding-top: 60px; } }
     .PostHeader img {
       flex: 1; }
     .PostHeader__side {
@@ -1182,9 +1201,6 @@ sub {
       flex: 1 50%;
       padding: 40px;
       color: white; }
-      @media screen and (max-width: 375px) {
-        .PostHeader__side {
-          background-color: red; } }
       @media screen and (max-width: 768px) {
         .PostHeader__side {
           max-width: 550px;
@@ -1251,21 +1267,12 @@ sub {
 .Product {
   width: 100%;
   padding-top: 80px; }
+  @media screen and (max-width: 375px) {
+    .Product {
+      padding-top: 120px; } }
   .ProductNav {
     margin-left: 40px;
     width: 150px; }
-  .ProductHeader {
-    max-height: 750px;
-    overflow: hidden; }
-  .ProductBreadcrumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    height: 120px;
-    color: white;
-    background-color: #777; }
   .ProductList {
     padding-top: 40px;
     background-color: #777;
@@ -1307,6 +1314,9 @@ sub {
 .Products {
   width: 100%;
   padding-top: 80px; }
+  @media screen and (max-width: 375px) {
+    .Products {
+      padding-top: 120px; } }
   .ProductsNav {
     margin-left: 30px;
     width: 150px; }
@@ -1324,11 +1334,16 @@ sub {
     background-color: #777; }
     @media screen and (max-width: 768px) {
       .ProductsBreadcrumb {
-        height: 80px; } }
-    @media screen and (max-width: 768px) {
-      .ProductsBreadcrumb h1 {
-        font-size: 90%;
-        font-weight: normal; } }
+        height: 80px; }
+        .ProductsBreadcrumb h1 {
+          font-size: 90%;
+          font-weight: normal; } }
+    @media screen and (max-width: 375px) {
+      .ProductsBreadcrumb {
+        padding-top: 10px;
+        font-size: 1.7em; }
+        .ProductsBreadcrumb .BreadcrumbItem {
+          display: none; } }
     .ProductsBreadcrumb a {
       margin-right: 20px;
       color: #ccc; }
@@ -1492,9 +1507,12 @@ sub {
   border: none;
   margin-right: 40px;
   font-size: .8em; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     .Languages {
       margin-right: 20px; } }
+  @media screen and (max-width: 375px) {
+    .Languages {
+      order: 3; } }
 
 /*
  * Search Form
@@ -1502,6 +1520,9 @@ sub {
 .Searchform {
   display: flex;
   align-content: center; }
+  @media screen and (max-width: 375px) {
+    .Searchform {
+      order: 1; } }
   .Searchform input {
     width: 100px;
     text-align: right; }
