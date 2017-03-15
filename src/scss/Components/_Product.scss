@@ -9,7 +9,11 @@
 
   @include max-screen($small) {
     padding-top: $spacing_base * 3;
+    header img {
+      padding-top: $spacing_base * 2;
+    }
   }
+
 
   &Nav {
     margin-left: $spacing_base;

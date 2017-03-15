@@ -1269,7 +1269,9 @@ sub {
   padding-top: 80px; }
   @media screen and (max-width: 375px) {
     .Product {
-      padding-top: 120px; } }
+      padding-top: 120px; }
+      .Product header img {
+        padding-top: 80px; } }
   .ProductNav {
     margin-left: 40px;
     width: 150px; }
@@ -1361,6 +1363,12 @@ sub {
       margin-left: 40px;
       margin-right: 40px;
       margin-bottom: 80px; }
+      @media screen and (max-width: 375px) {
+        .ProductsList__item {
+          flex: 1 275px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 20px; } }
     .ProductsListDetails {
       margin-top: 80px;
       background-color: white; }
@@ -1411,11 +1419,19 @@ sub {
   justify-content: center;
   background-color: #F6F5F5;
   height: 460px; }
+  @media screen and (max-width: 375px) {
+    .Marcas {
+      height: 100vh; } }
   .Marcas__title {
     text-align: center;
     flex: 1 100%; }
   .MarcasItem {
     margin: 20px; }
+    @media screen and (max-width: 375px) {
+      .MarcasItem {
+        margin: 0;
+        flex: 1 275px;
+        text-align: center; } }
   .Marcas li {
     list-style: none; }
 
