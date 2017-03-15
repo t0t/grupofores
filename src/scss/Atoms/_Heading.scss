@@ -30,12 +30,13 @@
 }
 @mixin h2() {
   font-size: 35px;
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
 
   @extend %h;
 }
 @mixin h3() {
   font-size: 24px;
+  letter-spacing: -.5px;
 
   @extend %h;
 }

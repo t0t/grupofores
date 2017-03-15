@@ -32,6 +32,11 @@
     height: $spacing_base * 3;
     color: $white;
     background-color: $gray_light;
+
+    a {
+      margin-right: $spacing_base / 2;
+      color: $gray;
+    }
   }
 
   // Products List
