@@ -1,0 +1,1 @@
+"use strict";var num="11";window.console.log(num),function(){for(var o=document.querySelectorAll(".siteNavigation a"),l=location.pathname.split("/")[1],n=l.split(".")[0],t=0;t<o.length;t++)window.console.log(o[t]),o[t].className==n&&(o[t].classList.add("active"),window.console.log(n))}();

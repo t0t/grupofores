@@ -1,0 +1,29 @@
+/*
+ * Video
+ */
+
+.Video {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #F6F5F5;
+  height: 500px;
+  background-image: url('../assets/images/logo-line.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-attachment: fixed;
+
+  &__title {
+    text-align: center;
+    flex: 1 100%;
+  }
+  iframe {
+    margin-bottom: 0;
+  }
+
+  & p {
+    display: none;
+  }
+}

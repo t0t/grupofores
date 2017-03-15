@@ -1,0 +1,42 @@
+/*
+ * Posts
+ */
+
+ .Posts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $spacing_base;
+
+  &__title {
+    text-align: center;
+    flex: 1 100%;
+  }
+  &__item {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 50%;
+    margin-bottom: 50px;
+
+    figure {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #F6F5F5;
+    }
+    figcaption {
+      display: block;
+      flex: 1 200px;
+      padding-left: 32px;
+      padding-right: 32px;
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+    }
+    img {
+      max-width: 210px;
+    }
+  }
+}

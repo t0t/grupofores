@@ -1,0 +1,118 @@
+/*
+ * Contact
+ */
+
+ .Contact {
+   margin-top: $spacing_base*2;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+   &Header {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     order: 2;
+     flex: 1 50%;
+    //  height: 300px;
+     background-color: #505050;
+     color: white;
+     text-align: center;
+
+   }
+
+   &Mapa {
+     width: 50%;
+     order: 2;
+     flex: 1 50%;
+    //  height: 400px;
+      figure {
+        // position: relative;
+        // height: 100%;
+      }
+     figcaption {
+       bottom: 50px;
+      //  position: absolute;
+       text-align: center;
+       line-height: 50px;
+     }
+     img {
+       width: 100%;
+     }
+    //  background-image: url('../assets/images/mapa.jpg');
+    //  background-repeat: no-repeat;
+    //  background-size: cover;
+    //  background-position: center left;
+   }
+
+   &Localizacion {
+    //  display: flex;
+    //  flex-direction: column-reverse;
+    position: relative;
+    order: 1;
+    width: 50%;
+    height: 460px;
+    flex: 1 50%;
+    background-image: url('../assets/images/localizacion.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    background-attachment: fixed;
+
+   h3 {
+     border-radius: 100%;
+     width: 200px;
+     line-height: 200px;
+     text-align: center;
+     background-color: white;
+     margin-bottom: 0;
+     position: absolute;
+     bottom: -100px;
+     left: 35%;
+     z-index: 1;
+   }
+ }
+
+   &Downloads {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     height: 200px;
+     order: 4;
+     flex: 1 50%;
+     margin-top: 20px;
+    //  background-color: #ccc;
+
+    h3 {
+      text-align: center;
+      padding-bottom: 10px;
+      flex: 1 100%;
+    }
+   }
+
+   &Departments {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     list-style: none;
+     padding-left: 0;
+     order: 3;
+     flex: 1 50%;
+     padding: 40px;
+     background-color: #F6F5F5;
+
+     &Item {
+       width: 100%;
+       margin: 1px;
+      //  background-color: red;
+       display: flex;
+       flex: 1 auto;
+     }
+   }
+
+}

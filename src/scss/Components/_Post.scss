@@ -1,0 +1,60 @@
+/*
+ * Post
+ */
+
+.Post {
+  margin-top: $spacing_base*2;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    text-align: center;
+    flex: 1 100%;
+    font-weight: bold;
+  }
+
+  &Header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #505050;
+    img {
+      flex: 1;
+    }
+    &__side {
+      text-align: center;
+      max-width: 375px;
+      flex: 1 50%;
+      padding: 30px;
+      color: white;
+    }
+  }
+
+  // Post Content
+  &Content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6F5F5;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    &__title {
+      flex: 1 100%;
+      text-align: center;
+    }
+    p {
+      max-width: 700px;
+    }
+  }
+
+  // Prev-Next Post navigation
+  &Nav {
+    padding-top: 30px;
+    flex: 1 100%;
+    text-align: center;
+  }
+}
