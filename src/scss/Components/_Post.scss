@@ -40,6 +40,20 @@
       flex: 1 50%;
       padding: $spacing_base;
       color: $white;
+
+      @include max-screen($small) {
+        background-color: red;
+      }
+      @include max-screen($big) {
+        max-width: 550px;
+        padding: 0;
+      }
+      @include min-screen($huge) {
+        max-width: 700px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        // flex: 1
+      }
     }
   }
 

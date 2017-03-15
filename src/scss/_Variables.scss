@@ -5,19 +5,33 @@
 // Base Spacing
 $spacing_base: 40px;
 
+// Colors
 $white: white;
 $black: black;
 $gray_lighter: #F6F5F5;
 $gray_light: #777;
 $gray: #ccc;
 $gray_dark: #444;
-
 $brand_color1: #FFCB03;
 $brand_color2: #FCC49A;
 $brand_color3: #007442;
-$brand_color4: #A9D051;
-$brand_color5: #CD5A40;
+$brand_color4: #CD5A40;
 
+$arkitmobel: #B60050;
+$habitdesign: #E1D1AD;
+$bricohabitat1: #9C2E83;
+$bricohabitat2: #A9D051;
+
+// Breakpoints
+$tiny: 275px;
+$small: 375px;
+$small-x: 480px;
+$medium: 578px;
+$medium-x: 667px;
+$big: 768px;
+$huge: 1024px;
+$colosal: 1440px;
+$cosmic: 1860px;
 
 
 // Reading direction of this project, if set to 'rtl' - texts, labels

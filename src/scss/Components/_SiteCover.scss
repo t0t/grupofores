@@ -19,6 +19,10 @@
   justify-content: flex-start;
   position: relative;
 
+  @include max-screen($small) {
+    padding-top: $spacing_base * 7;
+  }
+
   &Features {
     padding: $spacing_base;
     color: $gray_light;
@@ -26,6 +30,10 @@
     letter-spacing: -1px;
     text-align: center;
     margin-top: $spacing_base * 2;
+
+    @include max-screen($small) {
+      background-color: $white;
+    }
 
     &--item {
       display: flex;
