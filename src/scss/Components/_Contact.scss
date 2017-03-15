@@ -3,25 +3,32 @@
  */
 
  .Contact {
-   margin-top: $spacing_base*2;
    width: 100%;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   margin-top: $spacing_base * 3;
+
+   @include min-screen($big) {
+     margin-top: $spacing_base * 2;
+   }
 
    &Header {
-     width: 50%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     order: 2;
-     flex: 1 50%;
-    //  height: 300px;
-     background-color: #505050;
+     width: 100%;
      color: white;
      text-align: center;
+     background-color: $gray_dark;
+     order: 2;
 
+     @include min-screen($big) {
+       flex: 1 50%;
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: $gray_dark;
+     }
    }
 
    &Mapa {
@@ -49,18 +56,21 @@
    }
 
    &Localizacion {
-    //  display: flex;
-    //  flex-direction: column-reverse;
     position: relative;
-    order: 1;
-    width: 50%;
-    height: 460px;
-    flex: 0 50%;
+    flex: 1 50%;
+    height: 200px;
     background-image: url('../assets/images/localizacion.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
+
+    @include min-screen($big) {
+      height: 460px;
+      order: 1;
+      width: 50%;
+      flex: 0 50%;
+    }
 
    h3 {
      border-radius: 100%;

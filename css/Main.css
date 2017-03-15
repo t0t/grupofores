@@ -1464,22 +1464,29 @@ sub {
  * Contact
  */
 .Contact {
-  margin-top: 80px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 120px; }
+  @media screen and (min-width: 768px) {
+    .Contact {
+      margin-top: 80px; } }
   .ContactHeader {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    order: 2;
-    flex: 1 50%;
-    background-color: #505050;
+    width: 100%;
     color: white;
-    text-align: center; }
+    text-align: center;
+    background-color: #444;
+    order: 2; }
+    @media screen and (min-width: 768px) {
+      .ContactHeader {
+        flex: 1 50%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #444; } }
   .ContactMapa {
     width: 50%;
     order: 2;
@@ -1492,15 +1499,19 @@ sub {
       width: 100%; }
   .ContactLocalizacion {
     position: relative;
-    order: 1;
-    width: 50%;
-    height: 460px;
-    flex: 0 50%;
+    flex: 1 50%;
+    height: 200px;
     background-image: url("../assets/images/localizacion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     background-attachment: fixed; }
+    @media screen and (min-width: 768px) {
+      .ContactLocalizacion {
+        height: 460px;
+        order: 1;
+        width: 50%;
+        flex: 0 50%; } }
     .ContactLocalizacion h3 {
       border-radius: 100%;
       width: 200px;
