@@ -1,15 +1,14 @@
 /*
- * Site Products
- * ARCHIVE of PRODUCTS
+ * Site Product
+ * SINGLE PRODUCT
  */
 
- .Products {
-  // background-color: #f3f3f3;
+ .Product {
   width: 100%;
   padding-top: $spacing_base * 2;
 
   &Nav {
-    margin-left: 30px;
+    margin-left: $spacing_base;
     width: 150px;
     // display: flex;
     a {
@@ -34,7 +33,7 @@
     background-color: $gray_light;
   }
 
-  // Products List
+  // Product List
   &List {
     padding-top: $spacing_base * 3;
     background-color: $gray_light;
@@ -55,19 +54,21 @@
         // margin-right: 0
       }
     }
-    // Products List - Details
+
+    // Product List - Details
     &Details {
-      margin-top: $spacing_base * 2;
+      // margin-top: $spacing_base;
       background-color: $white;
     }
   }
 
   // Item Product Details
   &Details {
-    background-color: $gray_dark;
+    margin-top: $spacing_base / 2;
+    background-color: $gray_lighter;
     padding: $spacing_base / 2;
     text-align: center;
-    color: $gray;
+    color: $gray_dark;
 
     ul {
       list-style: none;
