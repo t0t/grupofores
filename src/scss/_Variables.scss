@@ -5,6 +5,13 @@
 // Base Spacing
 $spacing_base: 40px;
 
+$white: white;
+$black: black;
+$gray_lighter: #F6F5F5;
+$gray_light: #777;
+$gray: #ccc;
+$gray_dark: #444;
+
 
 
 // Reading direction of this project, if set to 'rtl' - texts, labels
@@ -20,7 +27,8 @@ $image-base-path: '../Images/' !default;
 // All brand colors, for each of these keys, a utility color-class will be generated.
 // f.e. `.u-brandColor-primary { color: #0097d7; }`
 $brand-colors: (
-      primary: #787878
+      primary: #777,
+      secondary: red
 )  !default;
 
 // The main brand font-family

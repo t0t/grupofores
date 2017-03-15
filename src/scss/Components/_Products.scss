@@ -5,7 +5,7 @@
  .Products {
   // background-color: #f3f3f3;
   width: 100%;
-  padding-top: $spacing_base*2;
+  padding-top: $spacing_base * 2;
 
   &Nav {
     margin-left: 30px;
@@ -26,14 +26,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: $spacing_base*4;
+    height: $spacing_base * 3;
     color: white;
-    background-color: #505050;
+    background-color: $gray_light;
   }
 
   // Products List
   &List {
-    background-color: #505050;
+    background-color: $gray_light;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,17 +53,17 @@
     }
     // Products List - Details
     &Details {
-      margin-top: $spacing_base*2;
-      background-color: white;
+      margin-top: $spacing_base * 2;
+      background-color: $white;
     }
   }
 
   // Item Product Details
   &Details {
-    background-color: #3e3e3e;
+    background-color: $gray_dark;
     padding: 20px;
     text-align: center;
-    color: #f3f3f3;
+    color: $gray;
 
     ul {
       list-style: none;

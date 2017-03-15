@@ -16,25 +16,28 @@
     display: flex;
     flex-wrap: wrap;
     flex: 0 50%;
-    margin-bottom: 50px;
+    margin-bottom: $spacing_base;
 
     figure {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      background-color: #F6F5F5;
+      background-color: $gray_lighter;
     }
+
     figcaption {
       display: block;
       flex: 1 200px;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: $spacing_base;
+      padding-right: $spacing_base;
+
       h3 {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 0;
       }
     }
+    
     img {
       max-width: 210px;
     }
