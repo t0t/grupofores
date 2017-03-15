@@ -3,6 +3,8 @@
   background-color: transparent;
   border: none;
   margin-right: $spacing_base;
+  font-size: .8em;
+
   @include max-screen(800px) {
     margin-right: $spacing_base / 2;
   }

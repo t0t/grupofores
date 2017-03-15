@@ -15,17 +15,17 @@
   color: $white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   position: relative;
 
   &Features {
-    padding: $spacing_base * 2;
-    color: $black;
-    background-color: rgba($white,.9);
-    // font-size: 1.3em;
+    padding: $spacing_base;
+    color: $gray_light;
+    background-color: rgba($white,1);
     letter-spacing: -1px;
-    // font-weight: bold;
+    text-align: center;
+    margin-top: $spacing_base * 2;
 
     &--item {
       display: flex;
@@ -34,8 +34,13 @@
       justify-content: center;
       align-items: center;
 
+      &:nth-child(2) {
+        margin-top: $spacing_base / 2;
+        margin-bottom: $spacing_base / 2;
+      }
+
       h3 {
-        margin-left: $spacing_base;
+        margin-left: $spacing_base / 2;
         max-width: 240px
       }
     }
