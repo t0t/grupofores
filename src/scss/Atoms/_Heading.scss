@@ -25,12 +25,19 @@
 @mixin h1() {
   font-size: 35px;
   line-height: 1.3;
+  @include max-screen($small) {
+    line-height: 1.2;
+  }
 
   @extend %h;
 }
 @mixin h2() {
   font-size: 35px;
   letter-spacing: -.5px;
+  @include max-screen($small) {
+    letter-spacing: -1px;
+    line-height: 1;
+  }
 
   @extend %h;
 }
