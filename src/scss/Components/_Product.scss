@@ -62,16 +62,22 @@
     }
   }
 
-  // Item Product Details
-  &Details {
+  // Item Product Detail
+  &Detail {
     margin-top: $spacing_base / 2;
     background-color: $gray_lighter;
     padding: $spacing_base / 2;
     text-align: center;
     color: $gray_dark;
 
+    &--title {
+      letter-spacing: -.5px;
+      font-size: 1.3em;
+    }
+
     ul {
       list-style: none;
+      padding-left: 0;
     }
     li {
       display: inline-flex;
