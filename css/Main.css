@@ -1193,8 +1193,6 @@ sub {
     @media screen and (max-width: 375px) {
       .PostHeader {
         padding-top: 60px; } }
-    .PostHeader img {
-      flex: 1; }
     .PostHeader__side {
       text-align: center;
       max-width: 375px;
