@@ -173,6 +173,14 @@ input::-moz-focus-inner {
     .iconLogo {
       height: 100px; } }
 
+.iconLupa {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+  width: 27px;
+  height: 27px;
+  margin-right: 10px; }
+
 .iconLogo--line {
   height: 60px;
   max-width: 230px; }
@@ -547,11 +555,7 @@ input[type="radio"] {
 input[type="search"] {
   color: white;
   background-color: transparent;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-width: 1px;
-  padding-bottom: 5px; }
+  border: none; }
 
 /*
  * The base class for all textInputs.
@@ -1442,6 +1446,19 @@ sub {
   background-color: transparent;
   border: none;
   margin-right: 40px; }
+  @media screen and (max-width: 800px) {
+    .Languages {
+      margin-right: 20px; } }
+
+/*
+ * Search Form
+ */
+.Searchform {
+  display: flex;
+  align-content: center; }
+  .Searchform input {
+    width: 100px;
+    text-align: right; }
 
 /**
  * Print styles - Inlined to avoid another HTTP connection.

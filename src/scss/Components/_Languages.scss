@@ -3,4 +3,7 @@
   background-color: transparent;
   border: none;
   margin-right: $spacing_base;
+  @include max-screen(800px) {
+    margin-right: $spacing_base / 2;
+  }
 }

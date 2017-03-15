@@ -19,6 +19,18 @@ use.logo {} // For svg symbol instances
     }
   }
 
+  &Lupa {
+    fill: none;
+    stroke: $gray;
+    stroke-width: 2px;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    @include max-screen(800px) {
+
+    }
+  }
+
   &Logo--line {
     height: 60px;
     max-width: 230px;
