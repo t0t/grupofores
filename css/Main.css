@@ -1526,7 +1526,7 @@ sub {
     height: 200px;
     background-image: url("../assets/images/localizacion.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: right;
     background-attachment: fixed; }
     @media screen and (min-width: 768px) {
