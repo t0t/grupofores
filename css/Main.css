@@ -1527,8 +1527,7 @@ sub {
     background-image: url("../assets/images/localizacion.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
-    background-attachment: fixed; }
+    background-position: center; }
     @media screen and (min-width: 768px) {
       .ContactLocalizacion {
         height: 460px;
