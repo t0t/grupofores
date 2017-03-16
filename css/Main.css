@@ -1469,32 +1469,55 @@ sub {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 120px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 666px) {
     .Contact {
       margin-top: 80px; } }
   .ContactHeader {
     width: 100%;
     color: white;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     background-color: #444;
-    order: 2; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
     @media screen and (min-width: 768px) {
       .ContactHeader {
-        flex: 1 50%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #444; } }
+        padding-top: 40px;
+        padding-bottom: 40px; }
+        .ContactHeader div {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+        .ContactHeader h2 {
+          margin-bottom: 0; } }
+    .ContactHeader h1 {
+      width: 100%;
+      flex: 1 100%; }
+    .ContactHeader h1,
+    .ContactHeader h2 {
+      font-size: inherit; }
+    .ContactHeader h2 {
+      font-weight: normal;
+      margin-right: 20px; }
   .ContactMapa {
-    width: 50%;
-    order: 2;
-    flex: 1 50%; }
+    order: 2; }
+    @media screen and (min-width: 768px) {
+      .ContactMapa {
+        width: 50%;
+        flex: 1 50%; } }
     .ContactMapa figcaption {
-      bottom: 50px;
       text-align: center;
-      line-height: 50px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      @media screen and (min-width: 768px) {
+        .ContactMapa figcaption {
+          padding-top: 26.6666666667px;
+          width: 200px;
+          margin-left: 30%; } }
     .ContactMapa img {
       width: 100%; }
   .ContactLocalizacion {
@@ -1513,26 +1536,34 @@ sub {
         width: 50%;
         flex: 0 50%; } }
     .ContactLocalizacion h3 {
-      border-radius: 100%;
-      width: 200px;
-      line-height: 200px;
       text-align: center;
-      background-color: white;
-      margin-bottom: 0;
-      position: absolute;
-      bottom: -100px;
-      left: 35%;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: rgba(246, 245, 245, 0.75);
+      line-height: 60px;
       z-index: 1; }
+      @media screen and (min-width: 768px) {
+        .ContactLocalizacion h3 {
+          position: absolute;
+          width: 220px;
+          left: 78%;
+          top: 0;
+          margin-bottom: 0;
+          border-bottom-right-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-radius: 0;
+          line-height: 75px;
+          background-color: #F6F5F5; } }
   .ContactDownloads {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 200px;
     order: 4;
     flex: 1 50%;
-    margin-top: 20px; }
+    padding-top: 37px;
+    padding-bottom: 40px; }
     .ContactDownloads h3 {
       text-align: center;
       padding-bottom: 10px;
@@ -1544,14 +1575,29 @@ sub {
     list-style: none;
     padding-left: 0;
     order: 3;
-    flex: 1 50%;
-    padding: 40px;
+    padding: 20px;
+    margin-bottom: 0;
     background-color: #F6F5F5; }
     .ContactDepartmentsItem {
       width: 100%;
-      margin: 1px;
+      min-height: 120px;
       display: flex;
-      flex: 1 auto; }
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      border-bottom: 1px solid rgba(68, 68, 68, 0.15); }
+      .ContactDepartmentsItem:last-child {
+        border-bottom: none; }
+      .ContactDepartmentsItem p {
+        margin-bottom: 0; }
+      .ContactDepartmentsItem h4 {
+        flex: 1 100%; }
+      @media screen and (min-width: 768px) {
+        .ContactDepartmentsItem {
+          flex: 1 50%;
+          padding: 40px; } }
 
 .Languages {
   color: white;
