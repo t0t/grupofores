@@ -1263,13 +1263,15 @@ sub {
 .Posts {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px; }
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .Posts__title {
     text-align: center;
     flex: 1 100%; }
   @media screen and (min-width: 600px) {
     .Posts__item {
-      flex: 0 50%; } }
+      flex: 0 47%; } }
   .Posts__item figure {
     background-color: #F6F5F5;
     margin-bottom: 20px; }
@@ -1277,15 +1279,16 @@ sub {
       .Posts__item figure {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        flex: 0 50%; } }
+        align-items: center; } }
   .Posts__item figcaption {
     flex: 1 200px;
-    padding: 20px 20px 13.3333333333px; }
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px; }
     .Posts__item figcaption h3 {
       font-size: 18px;
       font-weight: bold;
-      margin-bottom: 0; }
+      margin-bottom: 5px; }
 
 /*
  * Site Product

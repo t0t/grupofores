@@ -4,7 +4,9 @@
 .Posts {
     display: flex;
     flex-wrap: wrap;
-    padding: $spacing_base / 2;
+    justify-content: space-around;
+    padding-top: $spacing_base;
+    padding-bottom: $spacing_base;
 
     &__title {
         text-align: center;
@@ -13,7 +15,13 @@
 
     &__item {
       @include min-screen(600px) {
-        flex: 0 50%;
+        flex: 0 47%;
+        // &:first-child {
+        //   margin-right: 10px;
+        // }
+        // &:nth-child(2) {
+        //   margin-right: 0;
+        // }
       }
         figure {
             background-color: $gray_lighter;
@@ -22,22 +30,19 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                flex: 0 50%;
-
-                img {
-                    // padding-right: 10px;// width: 50%;
-                }
             }
         }
 
         figcaption {
             flex: 1 200px;
-            padding: $spacing_base / 2 $spacing_base / 2 $spacing_base / 3;
+            padding-top: $spacing_base / 2;
+            padding-right: $spacing_base / 2;
+            padding-left: $spacing_base / 2;
 
             h3 {
                 font-size: 18px;
                 font-weight: bold;
-                margin-bottom: 0;
+                margin-bottom: 5px;
             }
         }
     }

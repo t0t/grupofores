@@ -50,8 +50,7 @@
 
         a {
             color: $gray;
-            @include min-screen($small) {
-            }
+            @include min-screen($small) {}
         }
     }
     // Products List
