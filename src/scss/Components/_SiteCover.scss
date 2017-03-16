@@ -12,7 +12,6 @@
     position: relative;
     padding-top: $spacing_base * 3;
     margin-top: $spacing_base * 3;
-
     @include min-screen($small+10) {
         padding-top: 0;
         margin-top: $spacing_base * 2;
@@ -20,11 +19,11 @@
         justify-content: flex-start;
         flex-direction: column;
         background-size: cover;
-        background-position: -100px -100px;
+        background-position: -100px 0;
     }
     @include min-screen($big) {
-      padding-top: 40px;
-      background-color: red;
+        background-size: cover;
+        background-position: 0;
     }
 
     &Features {
@@ -41,7 +40,6 @@
         &--item {
             display: flex;
             flex-wrap: wrap;
-            // flex-direction: column;
             justify-content: center;
             align-items: center;
 
