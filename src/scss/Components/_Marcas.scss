@@ -14,15 +14,20 @@
     &__title {
         text-align: center;
         flex: 1 100%;
+        margin-bottom: 0;
     }
 
     &Item {
+      margin: 0;
+      text-align: center;
+      @include min-screen(600px) {
+        padding-left: $spacing_base / 2;
+        padding-right: $spacing_base / 2;
+      }
         @include max-screen($small) {
             &:nth-child(2) {
                 margin-right: $spacing_base / 2;
             }
-            margin: 0;
-            text-align: center;
         }
     }
 

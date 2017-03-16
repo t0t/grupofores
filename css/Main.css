@@ -1456,11 +1456,16 @@ sub {
   padding-top: 40px; }
   .Marcas__title {
     text-align: center;
-    flex: 1 100%; }
-  @media screen and (max-width: 375px) {
-    .MarcasItem {
-      margin: 0;
-      text-align: center; }
+    flex: 1 100%;
+    margin-bottom: 0; }
+  .MarcasItem {
+    margin: 0;
+    text-align: center; }
+    @media screen and (min-width: 600px) {
+      .MarcasItem {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media screen and (max-width: 375px) {
       .MarcasItem:nth-child(2) {
         margin-right: 20px; } }
   .Marcas li {
