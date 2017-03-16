@@ -1262,24 +1262,21 @@ sub {
   .Posts__title {
     text-align: center;
     flex: 1 100%; }
+  @media screen and (min-width: 600px) {
+    .Posts__item {
+      flex: 0 50%; } }
   .Posts__item figure {
     background-color: #F6F5F5;
     margin-bottom: 20px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) {
       .Posts__item figure {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        flex: 0 50%;
-        margin-bottom: 40px; }
-        .Posts__item figure img {
-          width: 50%; } }
+        flex: 0 50%; } }
   .Posts__item figcaption {
     flex: 1 200px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 13.3333333333px; }
+    padding: 20px 20px 13.3333333333px; }
     .Posts__item figcaption h3 {
       font-size: 18px;
       font-weight: bold;
@@ -1372,7 +1369,6 @@ sub {
         .ProductsBreadcrumb .BreadcrumbItem {
           display: none; } }
     .ProductsBreadcrumb a {
-      margin-right: 20px;
       color: #ccc; }
   .ProductsList {
     padding-top: 120px;
