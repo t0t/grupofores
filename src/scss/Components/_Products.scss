@@ -32,13 +32,9 @@
         height: $spacing_base * 3;
         color: $white;
         background-color: $gray_light;
+        font-size: 90%;
         @include max-screen($big) {
             height: $spacing_base * 2;
-
-            h1 {
-                font-size: 90%;
-                font-weight: normal;
-            }
         }
         @include max-screen($small) {
             .BreadcrumbItem {
@@ -46,6 +42,11 @@
             }
             padding-top: 10px;
             font-size: 1.7em;
+        }
+        @include min-screen($small) {
+          h1 {
+            margin-left: $spacing_base;
+          }
         }
 
         a {

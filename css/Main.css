@@ -1310,7 +1310,7 @@ sub {
     background-color: #777;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .ProductList__title {
       flex: 1 100%;
       padding-bottom: 40px;
@@ -1319,7 +1319,12 @@ sub {
       flex: 1 275px;
       margin-left: 40px;
       margin-right: 40px;
-      margin-bottom: 80px; }
+      margin-bottom: 40px; }
+      @media screen and (min-width: 600px) {
+        .ProductList__item {
+          margin-left: 0;
+          margin-right: 0;
+          flex: 0 45%; } }
     .ProductListDetails {
       background-color: white; }
   .ProductDetail {
@@ -1363,19 +1368,20 @@ sub {
     position: fixed;
     height: 120px;
     color: white;
-    background-color: #777; }
+    background-color: #777;
+    font-size: 90%; }
     @media screen and (max-width: 768px) {
       .ProductsBreadcrumb {
-        height: 80px; }
-        .ProductsBreadcrumb h1 {
-          font-size: 90%;
-          font-weight: normal; } }
+        height: 80px; } }
     @media screen and (max-width: 375px) {
       .ProductsBreadcrumb {
         padding-top: 10px;
         font-size: 1.7em; }
         .ProductsBreadcrumb .BreadcrumbItem {
           display: none; } }
+    @media screen and (min-width: 375px) {
+      .ProductsBreadcrumb h1 {
+        margin-left: 40px; } }
     .ProductsBreadcrumb a {
       color: #ccc; }
   .ProductsList {
@@ -1447,20 +1453,16 @@ sub {
   align-content: center;
   justify-content: center;
   background-color: #F6F5F5;
-  height: 460px; }
-  @media screen and (max-width: 375px) {
-    .Marcas {
-      height: 100vh; } }
+  padding-top: 40px; }
   .Marcas__title {
     text-align: center;
     flex: 1 100%; }
-  .MarcasItem {
-    margin: 20px; }
-    @media screen and (max-width: 375px) {
-      .MarcasItem {
-        margin: 0;
-        flex: 1 275px;
-        text-align: center; } }
+  @media screen and (max-width: 375px) {
+    .MarcasItem {
+      margin: 0;
+      text-align: center; }
+      .MarcasItem:nth-child(2) {
+        margin-right: 20px; } }
   .Marcas li {
     list-style: none; }
 
