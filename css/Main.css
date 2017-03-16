@@ -1103,24 +1103,29 @@ sub {
  * Cover
  */
 .Cover {
-  margin-top: 80px;
-  background-color: #ccc;
+  background-color: #777;
   width: 100%;
-  overflow: hidden;
-  min-height: 90vh;
   background-image: url("../assets/images/cover.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: contain;
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  position: relative; }
-  @media screen and (max-width: 375px) {
+  position: relative;
+  padding-top: 120px;
+  margin-top: 120px; }
+  @media screen and (min-width: 385px) {
     .Cover {
-      padding-top: 280px; } }
+      padding-top: 20px;
+      margin-top: 80px;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex-direction: column;
+      background-size: cover;
+      background-position: -100px -100px; } }
+  @media screen and (min-width: 768px) {
+    .Cover {
+      padding-top: 40px;
+      background-color: red; } }
   .CoverFeatures {
     padding: 40px;
     color: #777;
