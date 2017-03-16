@@ -1539,6 +1539,9 @@ sub {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center; }
+    @media screen and (min-width: 375px) {
+      .ContactLocalizacion {
+        background-size: cover; } }
     @media screen and (min-width: 768px) {
       .ContactLocalizacion {
         height: 460px;

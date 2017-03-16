@@ -88,7 +88,11 @@
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
-        // background-attachment: fixed;
+        // background-attachment: fixed; // Bug in IOs
+
+        @include min-screen($small) {
+          background-size: cover;
+        }
 
         @include min-screen($big) {
             height: 460px;
