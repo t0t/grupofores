@@ -1115,7 +1115,7 @@ sub {
   margin-top: 120px; }
   @media screen and (min-width: 385px) {
     .Cover {
-      padding-top: 20px;
+      padding-top: 0;
       margin-top: 80px;
       align-items: flex-end;
       justify-content: flex-start;
